@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Budge-It</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <header class="header">
+      <h1>Budge-It | Make Your Money Work forYou!</h1>
+    </header>
+    <main class="main">
+      <section class="overall-budget">
+        <span>
+          Your Budget: £<span class="overall-budget__amount">0</span>
+        </span>
+      </section>
+      <section class="user-form">
+        <form class="form">
+          <div class="form__item">
+            <label for="transaction-text">Transaction</label>
+            <input id="transaction-text" class="form__input form__input--text" 
+            maxlength="30"placeholder="e.g. 'Sold car'" type="text" required>
+          </div>
+          <div class="form__item">
+            <label for="transaction-amount">Amount (£)</label>
+            <input class="form__input form__input--number" id="transaction-amount" value="0" min="0" max="9999" type="number" required>
+          </div>
+          <select id="transaction-type" class="form__input form__select">
+            <option class="form__select-option" value="inc" id="inc-select">Income</option>
+            <option class="form__select-option" value="exp" id="exp-select">Expense</option>
+          </select>
+          <button id="user-form-submit" class="btn btn--primary">Submit</button>
+        </form>
+      </section>
+      <section class="breakdown">
+        <section class="breakdown__inc">
+          <header class="breakdown__header">
+            <h2>INCOME</h2>
+            <span>
+              £
+              <span id="inc-amount">0</span>
+            </span>
+          </header>
+          <ul id="inc-transaction-list" class="list"></ul>
+        </section>
+        <section class="breakdown__exp">
+          <header class="breakdown__header">
+            <h2>EXPENSE</h2>
+            <span>
+              £
+              <span id="exp-amount">0</span>
+            </span>
+          </header>
+          <ul id="exp-transaction-list" class="list"></ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

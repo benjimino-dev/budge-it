@@ -1,0 +1,28 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    background-color: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color, 0.2s;
+    text-align: center;
+  }
+  &--primary {
+    background-color: $colour-primary--light;
+    color: $colour-light;
+
+    &:hover {
+      background-color: $colour-primary--dark;
+      color: $colour-light;
+    }
+  }
+  &--delete {
+    background-color: $colour-delete;
+    color: $colour-light;
+  }
+}

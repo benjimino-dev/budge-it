@@ -1,0 +1,16 @@
+.form {
+  display: grid;
+  gap: 1rem;
+  &__item {
+    display: grid;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    border-radius: 3px;
+    padding: 0.5rem;
+  }
+}

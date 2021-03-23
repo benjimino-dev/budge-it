@@ -1,0 +1,11 @@
+.list {
+  list-style: none;
+  &__item {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 20rem 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    grid-auto-flow: column;
+  }
+}
